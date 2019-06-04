@@ -2,14 +2,9 @@ def findMinAndMax(L):
     if len(L) == 0:
         return (None, None)
     
-    min = 0
-    max = 0
+    min = L[0]
+    max = L[0]
     for x in L:
-        if min == 0:
-            min = x
-        if max == 0:
-            max = x
-
         if min > x:
             min = x
             continue
